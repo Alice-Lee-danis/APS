@@ -1,5 +1,5 @@
 import 'normalize.css'
-import '../styles/index.scss'
+import './styles/index.scss'
 import HeaderComponent from './component/header/headerComponent';
 
 const RootLayout = ({children} : {children: React.ReactNode}) => {

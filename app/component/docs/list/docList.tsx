@@ -22,7 +22,8 @@ const DocList:React.FC<{namePath:string}> = ({namePath}) => {
             text={item.text} 
             code={item.code} 
             classConstructor={item.classConstructor}
-            category={item.category}/>
+            category={item.category}
+            image={item.image}/>
         })}
     </>
 }

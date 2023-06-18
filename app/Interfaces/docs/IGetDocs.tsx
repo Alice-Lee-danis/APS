@@ -5,5 +5,6 @@ export default interface IGetDocs {
     classConstructor: string,
     bigO?: string,
     api:string,
-    category: 'dataArgument' | 'selectArgument'
+    category: 'dataArgument' | 'selectArgument',
+    image?: string
 }

@@ -134,6 +134,11 @@ header {
                         padding: 30px;
                         min-height: 100px;
                     }
+                    &__diagram {
+                        img {
+                            width: 100%;
+                        }
+                    }
                     &__code {
                         position: relative;
                         display: flex;

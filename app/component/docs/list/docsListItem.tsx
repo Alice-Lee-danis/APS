@@ -4,8 +4,9 @@ import React from "react"
 import IGetDocs from "../../../Interfaces/docs/IGetDocs"
 import { usePathname } from "next/navigation"
 import IllustrateCode from "./list-section/illustrateCode"
+import Image from "next/image"
 
-const DocsListItem:React.FC<IGetDocs> = ({name, text, code, classConstructor , bigO, api,category}) => {
+const DocsListItem:React.FC<IGetDocs> = ({name, text, code, classConstructor , bigO, api,category, image}) => {
     
     const path = usePathname()
 
@@ -13,7 +14,7 @@ const DocsListItem:React.FC<IGetDocs> = ({name, text, code, classConstructor , b
         <section className="docs__list__item">
             <div className="docs__list__item__illustrate">
                 <div className="docs__list__item__illustrate__diagram">
-                    <img src="" alt="" />
+                    <img  src={image} alt=""  />
                 </div>
                 <IllustrateCode category={category} code={code} classConstructor={classConstructor} path={path} api={api}></IllustrateCode>
             </div>
